@@ -2,13 +2,18 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n;
-    cout<<"enter the value of n: ";
-    cin>>n;
-    for(;n>0;n=n/10){
-        int digit;
-        digit=n%10;
-        cout<<digit;
+    int x;
+    cout<<"enter the value of x";
+    cin>>x;
+    long long rev=0;
+    
+    while(x!=0){
+        int digit=x%10;
+        rev=rev*10+digit;
+        x=x/10;
+        
+        
     }
+    cout<<"Reversed number: "<<rev<<endl;
     return 0;
 }
